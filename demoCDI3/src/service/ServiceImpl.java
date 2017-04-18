@@ -7,9 +7,11 @@ import javax.inject.Inject;
 import dao.IDao;
 import interceptor.Audited;
 import interceptor.Loged;
+import interceptor.Temps;
 
 @Audited
 @Loged
+@Temps
 public class ServiceImpl implements IService {
 
 	@Inject
